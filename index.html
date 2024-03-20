@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather App</title>
+      <link rel="web icon" type="png" href="./External/images/logo.png"/>
+      <link rel="stylesheet" href="./External/style.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+      <div class="container">
+            <form class="form">
+                  <input type="text" placeholder="Enter the city name" spellcheck="false" class="inputBox" required/>
+                  <button type="submit" class="btn"><div class="fas fa-search search"></div></button>
+            </form>
+            <div class="error"><span>Please write vailid city name</span></div>
+            <div class="weather">
+                  <img src="./External/images/clear.png" class="weatherLogo"/>
+                  <h1 class="temperature">°C</h1>
+                  <h3 class="cityName">City name</h3>
+                  <div class="details">
+                        <div class="col">
+                              <img src="./External/images/humidity.png" />
+                              <div>
+                                    <p class="humidity">%</p>
+                                    <p>Humidity</p>
+                              </div>
+                        </div>
+                        <div class="col">
+                              <img src="./External/images/wind.png" />
+                              <div>
+                                    <p class="wind"> kh/h</p>
+                                    <p>Wind Speed</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <script src="./External/script.js"></script>
+</body>
+</html>

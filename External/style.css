@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto+Slab:wght@400;500;600&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins' , sans-serif;
+      font-style: oblique;
+}
+body{
+      background: #222;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.container{
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+      width: 450px;
+      text-align: center;
+}
+.container .form{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.container .form .inputBox{
+      border: none;
+      outline: none;
+      width: 70%;
+      padding: 0.8rem 2rem;
+      border-radius: 5rem;
+      margin-right: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-style: oblique;
+}
+.container .form .btn{
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+}
+.container .form .btn .search{
+      font-size: 1.2rem;
+      color: gray;
+}
+.error{
+      padding: 1rem 0;
+      position: relative;
+      display: none;
+}
+.error span{
+      position: absolute;
+      left: 4rem;
+      color: rgb(156, 255, 63);
+      letter-spacing: 2px;
+}
+.weather .weatherLogo{
+      margin-top: 1.4rem;
+}
+.weather .temperature{
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 600;
+      color: aqua;
+}
+.weather .cityName{
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+}
+.weather .details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      margin-top: 50px;
+}
+.weather .details .col {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: bisque;
+}
+.weather .details .col img {
+      width: 40px;
+      margin-right: 10px;
+}
+.weather .details .col .humidity,
+.wind {
+      font-size: 28px;
+      margin-top: -6px;
+}
+.weather{
+      display: none;
+}
+@media (max-width:344px){
+      .weather .details .col{
+            flex-direction: column;
+      }
+      .weather .details .col img{
+            width: 70px;
+      }
+      .weather .details .col div{
+            margin-top: 20px;
+      }
+}
